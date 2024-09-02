@@ -19,27 +19,7 @@ class Program
         Console.Write(" ]");
         Console.WriteLine();
     }
-    static bool IsEven(int value)
-    {
-        if(value % 2 == 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    static bool IsEven(int value) => value % 2 == 0;
 
-    static bool IsOdd(int value)
-    {
-        if (value % 2 != 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    static bool IsOdd(int value) => !IsEven(value);
 }
